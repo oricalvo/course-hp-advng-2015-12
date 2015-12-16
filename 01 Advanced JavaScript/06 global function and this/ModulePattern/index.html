@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script>
+        "use strict";
+
+        var obj = {
+            id: 123,
+            dump: function () {
+                console.log(this.id);
+            }
+        };
+
+        //var f = obj.dump;
+        //f();
+
+        //doSomething(obj.dump.bind(obj));
+        doSomething(obj.dump, obj);
+
+        function doSomething(callback, context) {
+            //callback();
+            callback.call(context);
+        }
+    </script>
+</body>
+</html>
