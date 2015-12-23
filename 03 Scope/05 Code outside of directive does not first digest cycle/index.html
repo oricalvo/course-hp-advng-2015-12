@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+
+        <input type="file" style="display: none;" />
+        <button ng-click="browse()">Browse</button>
+
+        <button ng-click="run()">Change</button>
+        <span>{{fileName}}</span>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
