@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <button ng-click="run()">Run</button>
+        <div ng-controller="ChildCtrl" name="child1">
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+    <script src="ChildCtrl.js"></script>
+</body>
+</html>

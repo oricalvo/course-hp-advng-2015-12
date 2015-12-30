@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <form name="form" novalidate>
+            Name:
+            <input type="email" ng-model="email" name="email" ng-model-options="{allowInvalid: true}" />
+
+            <div>
+                <button ng-click="save()">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular</title>
+</head>
+<body id="body">
+    <div ng-controller="HomeCtrl">
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="ContactService.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
