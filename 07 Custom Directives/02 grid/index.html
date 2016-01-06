@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <grid models="contacts" model-name="contact">
+            <columns>
+                <column>
+                    <title>ID</title>
+                    <template>
+                        <span>{{contact.id}}</span>
+                        <span>{{contact.name}}</span>
+                    </template>
+                </column>
+
+                <column>
+                    <field>name</field>
+                    <title>Name</title>
+                </column>
+            </columns>
+        </grid>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="GridDirective.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
